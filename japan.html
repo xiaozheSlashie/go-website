@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Website | Japan Go Institute</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ["Tournament", "Prize Money (JPY)"],
+                ["Kisei", 45000000],
+                ["Judan", 7000000],
+                ["Honinbo", 28000000],
+                ["Gosei", 8000000],
+                ["Meijin", 30000000],
+                ["Oza", 14000000],
+                ["Tengen", 13000000],
+            ]);
+
+            var options = {
+                title: "Prize Money Distribution of Japan's Seven Major Go Tournaments(Pie Chart)"
+            };
+
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1>Go Website</h1>
+            <h3>Go is a strategic board game played on a grid-based board with black and white stones. It originated in
+                China and was historically known by various names such as "Yi" (弈), "Qi" (碁), and "Shou Tan" (手談). Go is
+                also one of the Four Arts of ancient Chinese scholars, alongside the guqin (琴), calligraphy (書), and
+                painting (畫).</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./korea.html">Korea Baduk Association</a></li>
+                <li><a class="active" href="#">Japan Go Institute</a></li>
+                <li><a href="./chian.html">China Weiqi Institute</a></li>
+                <li><a href="./taiwan.html">Haifeng Go Academy </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="japan">
+                <div class="image">
+                    <img src="./img/Nihon_Ki-in_Headquarter_(2016-05-05)_5.jpg" alt="Nihon Ki-in" />
+                </div>
+                <div class="info">
+                    <p>
+                        Nihon Ki-in (Japanese: 一般公益法人日本棋院 / Ippankōekihōjin Nihon Kiin) is the largest Go organization
+                        in Japan, responsible for organizing various Go tournaments. Its headquarters is located in
+                        Chiyoda, Tokyo, and it also has regional headquarters in Nagoya and Osaka. Currently, Nihon
+                        Ki-in has about 300 professional Go players.
+                    </p>
+                    <p>
+                        Nihon Ki-in was established in 1924 by the merger of the two largest Go organizations at the
+                        time, the Honinbo School and the Hōen-sha, with the support of Okura Kishichirō. After its
+                        establishment, Nihon Ki-in has had competition with organizations and individuals such as the
+                        Kisei-sha, Wu Qingyuan, and the Go Shinsha. In 1950, a group of players led by Hashimoto Utarō
+                        broke away from Nihon Ki-in and established the Kansai Ki-in.
+                    </p>
+                    <p>Its organizations include:</p>
+                    <ul>
+                        <li>Tokyo Headquarters</li>
+                        <li>Kansai Headquarters</li>
+                        <li>Chubu Headquarters</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="competition">
+                <div class="text">
+                    <h3>Nihon Ki-in Title Matches</h3>
+                    <p>
+                        The seven major Go tournaments in Japan, ranked by prize money, are the Kisei, Meijin, Honinbo,
+                        Oza, Tengen, Gosei, and Judan. Among them, the top three tournaments—Kisei, Meijin, and
+                        Honinbo—are collectively known as the "Three Major Title Matches." The Kisei title is the
+                        highest honor. If a player holds all three titles simultaneously, it is referred to as the
+                        "Triple Crown."
+                        There are many professional tournaments, but what makes the "Seven Major Title Matches"
+                        different from other competitions?
+                    </p>
+                    <p>
+                        The most significant feature of the Seven Major Title Matches is that all players are eligible
+                        to participate, though the way challengers are selected varies. For the Meijin and Honinbo
+                        tournaments, players enter a league after a preliminary round, and qualifying for the league is
+                        an indication of being a top-level player.
+                    </p>
+                    <p>The prize money for the title matches is as follows:</p>
+
+                    <ul>
+                        <li>Kisei: 45 million yen</li>
+                        <li>Judan: 7 million yen</li>
+                        <li>Honinbo: 28 million yen</li>
+                        <li>Gosei: 8 million yen</li>
+                        <li>Meijin: 30 million yen</li>
+                        <li>Oza: 14 million yen</li>
+                        <li>Tengen: 13 million yen</li>
+                    </ul>
+                </div>
+                <div id="piechart"></div>
+            </div>
+        </section>
+
+    </main>
+    <script color="0,0,0" opacity="0.3" zIndex="-2" count="99"
+        src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+        integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
