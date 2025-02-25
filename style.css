@@ -218,3 +218,8 @@ div.competition #piechart{
     margin-left: 2rem;
   }
   
+  @media screen and (max-width:768px){
+    header nav ul{
+        flex-direction: column;
+    }
+  }
